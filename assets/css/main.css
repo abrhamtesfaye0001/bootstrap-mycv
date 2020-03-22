@@ -1,0 +1,165 @@
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, figure {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/***************** mobile sidemenu *****************/
+
+/* **************** sidemenu top icons ************ */
+.col-1{
+    margin: 7px;
+}
+#mainrow1{
+    margin-top: 20px;
+}
+#mainrow1 :nth-child(2){
+    margin-bottom: 20px;
+}
+.X{
+    position: fixed;
+    top: -0px;
+    left: 250px;
+    
+    font-size: 1.5em;
+    margin-top: 0;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.X:hover{
+    color: red;
+}
+
+
+/* preclick mode sidemenu and sidekick are invisible */
+
+#sidemenu{
+    display: none;
+}
+#sidekick{
+    display: none;
+}
+#sidemenu ul li a{
+    padding: 10px;
+    color: black;
+    font-size: 21;
+    margin: 20px;
+    
+
+}
+
+#sidemenu ul li {
+    margin-top: 10px;
+    
+}
+
+#sidemenu-top{
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+/***** postclick sidemenu and sidekick are rendered visible ******/
+#sidemenu.active{
+    display: block;
+    position: fixed;
+    float: left;
+
+    background-color: white;
+
+    width: 300px;
+    height: 100vh;
+
+    /* left: -30%; 
+    transform: translateX(100%);
+    transition: all .3s ease-in-out; */
+}
+
+#sidekick.active{
+    display: block;
+    position: fixed;
+    left: 300px;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background: linear-gradient( to right,#a1a1a1,white,white,white,white,white);
+    opacity: 0.4;
+    /*  */   
+    
+}
+#mobiletopbar{
+    background-color: white;
+}
+#mobiletopbar.active{
+    display: none;
+}
+
+
+
+#ham{
+    border: none;
+    padding: 0;
+}
+#ham:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+/*  */
+
+
+#navbar{
+    background-color: white;
+    display: none;
+    
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 576px) {/*xtra small*/
+    
+
+}
+@media screen and (min-width: 576px) {/*small*/
+    
+
+}
+@media screen and (min-width: 768px) {/*medium*/
+    
+
+}
+@media screen and (min-width: 1050px) {/*large*/
+    #mobiletopbar{
+        display: none;
+        
+    }
+    #navbar{
+        display: block;
+    }
+
+}
+@media (min-width: 1200px) {/*xtra large*/
+    
+
+}
