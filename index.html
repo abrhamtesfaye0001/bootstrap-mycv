@@ -290,7 +290,56 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="container content07">
+                <div class="row">
+                    <div class="col-6" id="desc06 contact">
+                        <p>Contact Me</p>
+                        <p>Alternatives to Moores Signals</p>
+                        <p>
+                            However, because of my commitment to spending majority of time studying<br>
+                            and working, I've put a contact form for you to raise any question you would
+                            like to ask me
+                        </p>
+
+                    </div>
+                    <div class="col-6">
+                        <form action="POST">
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input placeholder="name" type="text" required minlength="1" maxlength="32"
+                                    pattern="[A-Za-z]{1,32}" class="form-control" id="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input placeholder="E-mail" type="email" class="form-control" id="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input placeholder="Password" type="password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" required minlength="8"
+                                    class="form-control" id="">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">SUBJECT</label>
+                                <select name="subject" id="subject" class="form-control">
+                                    <option value="Speaking Inquiry">Speaking Inquiry</option>
+                                    <option value="General Media Query">General Media Query</option>
+                                    <option value="business Inquiry">Buisness Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">YOUR MESSAGE</label><br>
+                                <textarea name="message" id="message" cols="40" rows="5"></textarea><br>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary form-control" id="">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
 
 
