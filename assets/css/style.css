@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+
+.top-header{
+    
+    /* height: 70px; */
+    z-index: 1;
+    position: relative;
+    z-index: 9999;
+    
+    
+}
+@media (max-width: 992px){
+    .top-header{
+        color: red;
+    }
+}
+/* **************** */
+
+/* ********************* */
+
+.menuDropDown:hover .fa-angle-down,
+.menuDropDown .fa-times
+{
+ display: none;   
+}
+.menuDropDown:hover .fa-times{
+    display: inline;
+}
+#logo{
+    height: 70px;  
+    }
+.nav-label {
+    
+    width: 85px;
+    margin: 0;
+    padding: 0px;
+}
+#navbarMenu{
+    color: red;
+
+    width: 100px;
+}
+
+.icons{
+    padding: 0;
+}
+
+
+/**** new updated for the nav collapsed to sidemenu*****/
+.blackText {
+    color: black;
+}
+
+.nav-item {
+    width: 150px;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .offcanvas-header *{
+        z-index: 1000;
+    }
+    .offcanvas-header {
+        z-index: 1000;
+        display: block;
+    }
+
+    .navbar-collapse {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #eee;
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+
+    .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-30%);
+    }
+}
+/****************************/
+
+
+@media all {
+    .navbar .nav-item .dropdown-menu {display: none;}
+    .navbar .nav-item:hover .nav-link{color: #000;}
+    .navbar .nav-item:hover .dropdown-menu{display:block;}
+    .navbar .nav-item .dropdown-menu{margin-top: 0;}
+}
