@@ -93,6 +93,158 @@
 }
 /****************************/
 
+#greetings-div{
+    
+    z-index: -99999;
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    /* background-image: url("../images/chrome\ background.jpg"); */
+    background-image: url("../images/greeting.jpg");
+    background-size: 100% 100%;
+    
+    
+    
+    background-repeat: no-repeat;
+}
+#greetings-text{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    justify-content: space-around;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    float: none;
+    position: relative;
+    top: 40%;
+    /* vertical-align: middle; */
+}
+
+.desc {
+    text-align: center; 
+    height: 300px;
+    font-size: 40;
+    color: black;
+    justify-content: space-around;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    float: none;
+    position: relative;
+    top: 10%;
+    z-index: -1;
+}
+
+.below *{
+    position: relative;
+    z-index: -9;
+}
+.neutral *{position: relative;z-index: 0;}
+.container{
+    margin-top: 50px;
+}
+
+.container-fluid{
+    margin-top: 50px;
+}
+/* .img-responsive{
+    width: 100%; 
+    height: 300px;
+    object-fit: cover;
+} */
+
+
+
+/* articles */
+.project{
+    margin: auto;
+    
+}
+/* .project>img{
+    height: auto;
+    width: 100%;
+} */
+.project .title{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22;
+}
+
+.project .title:hover{
+    color: orange;
+}
+.project .content{
+    /* font-family: quicksand; */
+    font-size: 18px;
+    
+    word-wrap: break-word; 
+    width: 75%;/*change based on screen size*/
+    padding: auto;
+    
+}
+
+@media only screen and (max-width: 992px){
+    .project .content{
+        width: 100%;
+    }
+}
+
+
+.title1{
+    font-size: 48px;
+    text-align: center;
+    font-weight: "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.customAnchor:hover, .customAnchor:visited, .customAnchor:link, .customAnchor:active{
+    color: orange;
+    text-decoration: none;
+    
+}
+
+.orangeAnchor:hover, .orangeAnchor:visited, .orangeAnchor:link, .orangeAnchor:active{
+    color: orange;
+    text-decoration: none;
+    
+}
+.blackAnchor:hover, .blackAnchor:visited, .blackAnchor:link, .blackAnchor:active{
+    color: black;
+    text-decoration: none;
+    
+}
+.content{
+    word-wrap: break-word; 
+    text-align: center; 
+    width: 75%;margin: auto;
+}
+
+
+
+/* **** articles ****** */
+.articleAnchor{
+    text-decoration: none;
+    
+}
+
+.articleTitle{
+    font-size: 32px;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 992px){
+    #greetings-div{
+        height: 730px;
+    }
+
+}
+@media only screen and (max-width: 991px){
+    #greetings-div{
+        height: 450px;
+    }
+    
+}
 
 @media all {
     .navbar .nav-item .dropdown-menu {display: none;}
